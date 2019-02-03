@@ -97,6 +97,10 @@ class neural_net:
         self.feed_forward(data)
         plt.scatter(x,y,c='g')
         print(self.output_layer)
+        if(self.output_layer[0]<self.output_layer[1])
+                print("The point is blue")
+        else
+                print("The point is red")
                                      
 
 
@@ -111,5 +115,8 @@ for i in data:
             plt.scatter(j[0],j[1],c= 'b')
 fnn = neural_net()
 fnn.fit(data)
-fnn.process(400,0.001)
+fnn.process(400,0.001) #use plt.show() on terminal of idle or any other python-based terminal to get the plot of graphics data on which classification is done.
+                        #use fnn.predict to determine the prediction of the data , like put fnn.predict(1,2) 
+
+
 #p = ax.pcolor(X, Y/(2*np.pi), Z, cmap=matplotlib.cm.RdBu
